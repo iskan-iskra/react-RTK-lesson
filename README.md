@@ -1,4 +1,4 @@
-# React template by iskan_iskra:
+# React Redux ToolKit lesson:
 
 ## Версии:
 
@@ -32,3 +32,5 @@ npm run build
 - React
 - React-Router-DOM
 - React-bootstrap
+- Redux-ToolKit
+- react-redux
