@@ -1,6 +1,6 @@
 import { APP_ROUTER_PATH } from "@/const";
 import { AppLayout } from "@/layout";
-import { AppErrorPage, AppMainPage } from "@/pages";
+import { AppErrorPage, AppMainPage, AppSecondPage } from "@/pages";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -12,6 +12,10 @@ const router = createBrowserRouter([
       {
         path: APP_ROUTER_PATH.ERROR,
         element: <AppErrorPage />,
+      },
+      {
+        path: APP_ROUTER_PATH.SECOND,
+        element: <AppSecondPage />,
       },
     ],
   },

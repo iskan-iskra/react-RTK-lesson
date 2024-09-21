@@ -1,6 +1,6 @@
 import { AppHeader } from "@/widjets";
 import { Outlet } from "react-router-dom";
-import { appThemeProvider } from "@/hoc";
+import { appStoreProvider, appThemeProvider } from "@/hoc";
 import "./app-layout.css";
 
 const AppLayoutCore = () => (
@@ -14,4 +14,6 @@ const AppLayoutCore = () => (
 
 const AppLayoutWithThemeProvider = appThemeProvider(AppLayoutCore);
 
-export const AppLayout = AppLayoutWithThemeProvider;
+const AppLayoutWithStoreProvider = appStoreProvider(AppLayoutWithThemeProvider);
+
+export const AppLayout = AppLayoutWithStoreProvider;
